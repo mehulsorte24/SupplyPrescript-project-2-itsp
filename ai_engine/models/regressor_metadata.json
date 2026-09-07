@@ -1,0 +1,34 @@
+{
+    "model_type": "XGBRegressor",
+    "model_version": "1.0.0",
+    "target": "actual_delay_days",
+    "target_unit": "days",
+    "feature_count": 18,
+    "feature_columns": [
+        "distance_km",
+        "lead_time_days",
+        "inventory_level",
+        "supplier_reliability",
+        "order_value",
+        "fuel_price_index",
+        "warehouse_load",
+        "supplier_risk",
+        "weather_risk",
+        "traffic_risk",
+        "inventory_risk",
+        "warehouse_risk",
+        "distance_risk",
+        "transport_risk",
+        "priority_risk",
+        "fuel_pressure",
+        "lead_time_pressure",
+        "overall_risk_score"
+    ],
+    "random_state": 42,
+    "test_size": 0.2,
+    "metrics": {
+        "mae": 1.3902450799942017,
+        "rmse": 1.9394603164401225,
+        "r2_score": 0.5553774833679199
+    }
+}

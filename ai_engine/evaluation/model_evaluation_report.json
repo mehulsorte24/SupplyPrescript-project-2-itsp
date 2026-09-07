@@ -1,0 +1,27 @@
+{
+    "evaluation_version": "1.0.0",
+    "dataset": {
+        "records": 100,
+        "features": 18,
+        "test_size": 0.2,
+        "random_state": 42
+    },
+    "classification": {
+        "accuracy": 0.75,
+        "precision": 0.882353,
+        "recall": 0.833333,
+        "f1_score": 0.857143,
+        "roc_auc": 0.611111,
+        "test_records": 20,
+        "delayed_records": 18,
+        "on_time_records": 2
+    },
+    "regression": {
+        "mae_days": 0.19771,
+        "rmse_days": 0.762706,
+        "r2_score": 0.912226,
+        "test_records": 20,
+        "actual_mean_delay_days": 3.35,
+        "predicted_mean_delay_days": 3.167108
+    }
+}

@@ -1,0 +1,284 @@
+[
+    {
+        "shipment_id": "SHP0000001",
+        "delay_probability": 0.2974861264228821,
+        "risk_drivers": [
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 2804.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.9346666666666666
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000002",
+        "delay_probability": 0.6880205273628235,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.38665
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.64
+            },
+            {
+                "feature": "warehouse_risk",
+                "description": "High warehouse load risk",
+                "shap_value": 0.05683772638440132,
+                "feature_value": 0.64
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000003",
+        "delay_probability": 0.8293544054031372,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.3895333333333334
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.71
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 1609.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.5363333333333333
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000004",
+        "delay_probability": 0.829143226146698,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.4632
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.94
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 1057.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.08575607091188431,
+                "feature_value": 0.3523333333333333
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000005",
+        "delay_probability": 0.8293544054031372,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.4523916666666666
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.71
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 1565.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.5216666666666666
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000006",
+        "delay_probability": 0.8280047178268433,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.4116000000000001
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 1743.0
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.25152745842933655,
+                "feature_value": 0.55
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.581
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000007",
+        "delay_probability": 0.8317945599555969,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.5452083333333333
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.76
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 2540.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.8466666666666667
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000008",
+        "delay_probability": 0.8317945599555969,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.4921083333333333
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.91
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 1766.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.5886666666666667
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000009",
+        "delay_probability": 0.8317945599555969,
+        "risk_drivers": [
+            {
+                "feature": "overall_risk_score",
+                "description": "High overall risk score",
+                "shap_value": 0.9155562520027161,
+                "feature_value": 0.5163833333333334
+            },
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.82
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.2733616232872009,
+                "feature_value": 2736.0
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.10458830744028091,
+                "feature_value": 0.912
+            }
+        ]
+    },
+    {
+        "shipment_id": "SHP0000010",
+        "delay_probability": 0.3882705569267273,
+        "risk_drivers": [
+            {
+                "feature": "warehouse_load",
+                "description": "High warehouse load",
+                "shap_value": 0.2783748209476471,
+                "feature_value": 0.83
+            },
+            {
+                "feature": "distance_km",
+                "description": "Long transportation distance",
+                "shap_value": 0.12863457202911377,
+                "feature_value": 918.0
+            },
+            {
+                "feature": "warehouse_risk",
+                "description": "High warehouse load risk",
+                "shap_value": 0.05683772638440132,
+                "feature_value": 0.83
+            },
+            {
+                "feature": "distance_risk",
+                "description": "Long-distance transportation risk",
+                "shap_value": 0.015696682035923004,
+                "feature_value": 0.306
+            }
+        ]
+    }
+]

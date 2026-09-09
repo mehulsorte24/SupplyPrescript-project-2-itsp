@@ -1,0 +1,14 @@
+{
+    "system": "SupplyPrescript",
+    "module": "Automated Retraining Trigger Engine",
+    "generated_at": "2026-09-09T17:13:49.403633+00:00",
+    "source_monitoring_status": "HEALTHY",
+    "decision": {
+        "monitoring_status": "HEALTHY",
+        "warning_metric_count": 0,
+        "warning_metrics": [],
+        "retraining_required": false,
+        "trigger_status": "NO_RETRAINING_REQUIRED",
+        "recommended_action": "Continue using the current model and collect additional outcomes."
+    }
+}

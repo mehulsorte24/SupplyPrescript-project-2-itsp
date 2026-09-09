@@ -1,0 +1,57 @@
+{
+    "system": "SupplyPrescript",
+    "module": "AI Model Monitoring Engine",
+    "generated_at": "2026-09-09T17:10:05.538764+00:00",
+    "monitoring_status": "HEALTHY",
+    "monitoring_metrics": {
+        "total_evaluated": 10,
+        "correct_predictions": 8,
+        "incorrect_predictions": 2,
+        "classification_accuracy_percent": 80.0,
+        "mean_absolute_delay_error_days": 0.29,
+        "missed_delays": 2,
+        "missed_delay_rate_percent": 20.0,
+        "false_delay_alerts": 0,
+        "false_delay_alert_rate_percent": 0.0
+    },
+    "metric_checks": [
+        {
+            "metric": "classification_accuracy",
+            "value": 80.0,
+            "threshold": 75.0,
+            "condition": "greater_than_or_equal",
+            "status": "PASS"
+        },
+        {
+            "metric": "delay_prediction_error",
+            "value": 0.29,
+            "threshold": 2.0,
+            "condition": "less_than_or_equal",
+            "status": "PASS"
+        },
+        {
+            "metric": "missed_delay_rate",
+            "value": 20.0,
+            "threshold": 20.0,
+            "condition": "less_than_or_equal",
+            "status": "PASS"
+        },
+        {
+            "metric": "false_delay_alert_rate",
+            "value": 0.0,
+            "threshold": 20.0,
+            "condition": "less_than_or_equal",
+            "status": "PASS"
+        }
+    ],
+    "thresholds": {
+        "minimum_accuracy_percent": 75.0,
+        "maximum_mean_delay_error_days": 2.0,
+        "maximum_missed_delay_rate_percent": 20.0,
+        "maximum_false_delay_alert_rate_percent": 20.0
+    },
+    "recommendations": [
+        "Model performance is within all configured monitoring thresholds.",
+        "Continue collecting actual shipment outcomes to improve monitoring reliability."
+    ]
+}

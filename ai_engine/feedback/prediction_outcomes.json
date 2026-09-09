@@ -1,0 +1,186 @@
+{
+    "system": "SupplyPrescript",
+    "module": "AI Feedback Engine",
+    "generated_at": "2026-09-09T16:55:44.933588+00:00",
+    "prediction_source": "ai_engine\\prediction\\ai_intelligence_results.json",
+    "actual_data_source": "ai_engine\\data\\raw\\shipments.csv",
+    "summary": {
+        "evaluated_records": 10,
+        "correct_predictions": 8,
+        "incorrect_predictions": 2,
+        "classification_accuracy_percent": 80.0,
+        "mean_absolute_delay_error_days": 0.29,
+        "delay_evaluations": 10
+    },
+    "assessment": {
+        "accuracy_assessment": "Good",
+        "delay_prediction_assessment": "Good",
+        "recommendations": [
+            "Classification performance is acceptable.",
+            "Delay prediction error is within an acceptable range.",
+            "Continue collecting actual shipment outcomes for future model feedback."
+        ]
+    },
+    "evaluated_predictions": [
+        {
+            "shipment_id": "SHP0000001",
+            "prediction": {
+                "status": "ON_TIME",
+                "delay_days": 0.58
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 2.0
+            },
+            "evaluation": {
+                "classification_correct": false,
+                "absolute_delay_error_days": 1.42
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933136+00:00"
+        },
+        {
+            "shipment_id": "SHP0000002",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 1.0
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 1.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.0
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933157+00:00"
+        },
+        {
+            "shipment_id": "SHP0000003",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 1.0
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 1.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.0
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933164+00:00"
+        },
+        {
+            "shipment_id": "SHP0000004",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 6.97
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 7.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.03
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933169+00:00"
+        },
+        {
+            "shipment_id": "SHP0000005",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 2.72
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 4.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 1.28
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933174+00:00"
+        },
+        {
+            "shipment_id": "SHP0000006",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 1.98
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 2.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.02
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933178+00:00"
+        },
+        {
+            "shipment_id": "SHP0000007",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 5.97
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 6.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.03
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933182+00:00"
+        },
+        {
+            "shipment_id": "SHP0000008",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 6.02
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 6.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.02
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933185+00:00"
+        },
+        {
+            "shipment_id": "SHP0000009",
+            "prediction": {
+                "status": "DELAYED",
+                "delay_days": 6.96
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 7.0
+            },
+            "evaluation": {
+                "classification_correct": true,
+                "absolute_delay_error_days": 0.04
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933191+00:00"
+        },
+        {
+            "shipment_id": "SHP0000010",
+            "prediction": {
+                "status": "ON_TIME",
+                "delay_days": 1.03
+            },
+            "actual": {
+                "status": "DELAYED",
+                "delay_days": 1.0
+            },
+            "evaluation": {
+                "classification_correct": false,
+                "absolute_delay_error_days": 0.03
+            },
+            "evaluated_at": "2026-09-09T16:55:44.933195+00:00"
+        }
+    ]
+}

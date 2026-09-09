@@ -1,0 +1,322 @@
+{
+    "system": "SupplyPrescript",
+    "module": "AI Error Analysis Engine",
+    "overall_statistics": {
+        "total_evaluated": 10,
+        "correct_predictions": 8,
+        "incorrect_predictions": 2,
+        "classification_accuracy_percent": 80.0,
+        "missed_delays": 2,
+        "false_delay_alerts": 0,
+        "mean_absolute_delay_error_days": 0.287,
+        "maximum_absolute_delay_error_days": 1.42
+    },
+    "error_breakdown": {
+        "correct": 8,
+        "missed_delays": 2,
+        "false_delay_alerts": 0,
+        "other": 0
+    },
+    "error_by_transport_mode": {
+        "Air": {
+            "records": 2,
+            "correct_predictions": 1,
+            "incorrect_predictions": 1,
+            "accuracy_percent": 50.0,
+            "average_delay_error_days": 0.035,
+            "missed_delays": 1,
+            "false_delay_alerts": 0
+        },
+        "Rail": {
+            "records": 3,
+            "correct_predictions": 3,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.4367,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        },
+        "Road": {
+            "records": 4,
+            "correct_predictions": 3,
+            "incorrect_predictions": 1,
+            "accuracy_percent": 75.0,
+            "average_delay_error_days": 0.3675,
+            "missed_delays": 1,
+            "false_delay_alerts": 0
+        },
+        "Sea": {
+            "records": 1,
+            "correct_predictions": 1,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.02,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        }
+    },
+    "error_by_weather": {
+        "High": {
+            "records": 4,
+            "correct_predictions": 4,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.0225,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        },
+        "Low": {
+            "records": 4,
+            "correct_predictions": 2,
+            "incorrect_predictions": 2,
+            "accuracy_percent": 50.0,
+            "average_delay_error_days": 0.6875,
+            "missed_delays": 2,
+            "false_delay_alerts": 0
+        },
+        "Medium": {
+            "records": 1,
+            "correct_predictions": 1,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.0,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        },
+        "Severe": {
+            "records": 1,
+            "correct_predictions": 1,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.03,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        }
+    },
+    "error_by_traffic": {
+        "Low": {
+            "records": 4,
+            "correct_predictions": 4,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.015,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        },
+        "Medium": {
+            "records": 6,
+            "correct_predictions": 4,
+            "incorrect_predictions": 2,
+            "accuracy_percent": 66.67,
+            "average_delay_error_days": 0.4683,
+            "missed_delays": 2,
+            "false_delay_alerts": 0
+        }
+    },
+    "error_by_priority": {
+        "Critical": {
+            "records": 2,
+            "correct_predictions": 2,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.03,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        },
+        "High": {
+            "records": 3,
+            "correct_predictions": 3,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.4367,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        },
+        "Low": {
+            "records": 4,
+            "correct_predictions": 2,
+            "incorrect_predictions": 2,
+            "accuracy_percent": 50.0,
+            "average_delay_error_days": 0.375,
+            "missed_delays": 2,
+            "false_delay_alerts": 0
+        },
+        "Medium": {
+            "records": 1,
+            "correct_predictions": 1,
+            "incorrect_predictions": 0,
+            "accuracy_percent": 100.0,
+            "average_delay_error_days": 0.0,
+            "missed_delays": 0,
+            "false_delay_alerts": 0
+        }
+    },
+    "recommendations": [
+        "Classification performance is acceptable but should continue to be monitored.",
+        "Delay-duration error is within an acceptable range for the current evaluation sample.",
+        "2 delayed shipment(s) were missed by the classifier; investigate false-negative cases.",
+        "Continue collecting actual shipment outcomes to support future model monitoring and retraining."
+    ],
+    "detailed_records": [
+        {
+            "shipment_id": "SHP0000001",
+            "error_type": "MISSED_DELAY",
+            "predicted_status": "ON_TIME",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 0.58,
+            "actual_delay_days": 2.0,
+            "classification_correct": false,
+            "absolute_delay_error_days": 1.42,
+            "transport_mode": "Road",
+            "weather_severity": "Low",
+            "traffic_level": "Medium",
+            "priority": "Low",
+            "supplier_reliability": 0.98,
+            "warehouse_load": 0.35
+        },
+        {
+            "shipment_id": "SHP0000002",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 1.0,
+            "actual_delay_days": 1.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.0,
+            "transport_mode": "Rail",
+            "weather_severity": "High",
+            "traffic_level": "Low",
+            "priority": "High",
+            "supplier_reliability": 0.82,
+            "warehouse_load": 0.64
+        },
+        {
+            "shipment_id": "SHP0000003",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 1.0,
+            "actual_delay_days": 1.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.0,
+            "transport_mode": "Road",
+            "weather_severity": "Medium",
+            "traffic_level": "Low",
+            "priority": "Medium",
+            "supplier_reliability": 0.78,
+            "warehouse_load": 0.71
+        },
+        {
+            "shipment_id": "SHP0000004",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 6.97,
+            "actual_delay_days": 7.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.03,
+            "transport_mode": "Road",
+            "weather_severity": "Severe",
+            "traffic_level": "Medium",
+            "priority": "High",
+            "supplier_reliability": 0.97,
+            "warehouse_load": 0.94
+        },
+        {
+            "shipment_id": "SHP0000005",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 2.72,
+            "actual_delay_days": 4.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 1.28,
+            "transport_mode": "Rail",
+            "weather_severity": "Low",
+            "traffic_level": "Medium",
+            "priority": "High",
+            "supplier_reliability": 0.69,
+            "warehouse_load": 0.71
+        },
+        {
+            "shipment_id": "SHP0000006",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 1.98,
+            "actual_delay_days": 2.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.02,
+            "transport_mode": "Sea",
+            "weather_severity": "High",
+            "traffic_level": "Low",
+            "priority": "Low",
+            "supplier_reliability": 0.73,
+            "warehouse_load": 0.55
+        },
+        {
+            "shipment_id": "SHP0000007",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 5.97,
+            "actual_delay_days": 6.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.03,
+            "transport_mode": "Rail",
+            "weather_severity": "High",
+            "traffic_level": "Medium",
+            "priority": "Low",
+            "supplier_reliability": 0.68,
+            "warehouse_load": 0.76
+        },
+        {
+            "shipment_id": "SHP0000008",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 6.02,
+            "actual_delay_days": 6.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.02,
+            "transport_mode": "Road",
+            "weather_severity": "Low",
+            "traffic_level": "Medium",
+            "priority": "Critical",
+            "supplier_reliability": 0.67,
+            "warehouse_load": 0.91
+        },
+        {
+            "shipment_id": "SHP0000009",
+            "error_type": "CORRECT",
+            "predicted_status": "DELAYED",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 6.96,
+            "actual_delay_days": 7.0,
+            "classification_correct": true,
+            "absolute_delay_error_days": 0.04,
+            "transport_mode": "Air",
+            "weather_severity": "High",
+            "traffic_level": "Low",
+            "priority": "Critical",
+            "supplier_reliability": 0.73,
+            "warehouse_load": 0.82
+        },
+        {
+            "shipment_id": "SHP0000010",
+            "error_type": "MISSED_DELAY",
+            "predicted_status": "ON_TIME",
+            "actual_status": "DELAYED",
+            "predicted_delay_days": 1.03,
+            "actual_delay_days": 1.0,
+            "classification_correct": false,
+            "absolute_delay_error_days": 0.03,
+            "transport_mode": "Air",
+            "weather_severity": "Low",
+            "traffic_level": "Medium",
+            "priority": "Low",
+            "supplier_reliability": 0.81,
+            "warehouse_load": 0.83
+        }
+    ]
+}

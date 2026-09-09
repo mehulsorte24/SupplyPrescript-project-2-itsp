@@ -1,0 +1,16 @@
+{
+    "system": "SupplyPrescript",
+    "module": "Model Retraining Engine",
+    "generated_at": "2026-09-09T17:16:59.999621+00:00",
+    "retraining_requested": false,
+    "retraining_executed": false,
+    "training_records": 100,
+    "feature_count": 18,
+    "classifier_metrics": null,
+    "regressor_metrics": null,
+    "model_artifacts": {
+        "classifier": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\models\\classifier.json",
+        "regressor": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\models\\regressor.json"
+    },
+    "next_action": "Continue using the current models and collect additional shipment outcomes."
+}

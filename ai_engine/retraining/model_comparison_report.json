@@ -1,0 +1,20 @@
+{
+  "system": "SupplyPrescript",
+  "module": "AI Model Performance Comparison Engine",
+  "generated_at": "2026-09-10T07:48:29.424375+00:00",
+  "comparison_type": "BASELINE",
+  "current_version": "v1.0",
+  "candidate_version": "v1.0",
+  "decision": {
+    "candidate_is_better": false,
+    "recommendation": "KEEP_BASELINE"
+  },
+  "summary": {
+    "status": "BASELINE_ESTABLISHED",
+    "message": "Only one model version is currently registered. It is being established as the performance baseline."
+  },
+  "metrics": {
+    "classification": {},
+    "regression": {}
+  }
+}

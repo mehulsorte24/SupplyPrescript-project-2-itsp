@@ -1,0 +1,24 @@
+{
+  "system": "SupplyPrescript",
+  "module": "AI Model Promotion and Rollback Engine",
+  "generated_at": "2026-09-10T07:52:29.196847+00:00",
+  "current_version_before_action": "v1.0",
+  "promotion_result": {
+    "action": "NO_PROMOTION",
+    "status": "BASELINE",
+    "reason": "Candidate version is the same as the currently active version.",
+    "current_version": "v1.0",
+    "candidate_version": "v1.0"
+  },
+  "rollback": {
+    "supported": true,
+    "automatic_rollback": false,
+    "message": "Previous active model artifacts are backed up before a successful promotion."
+  },
+  "safety_policy": {
+    "promote_only_if_candidate_is_better": true,
+    "backup_previous_model": true,
+    "never_delete_previous_model": true,
+    "automatic_rollback": false
+  }
+}

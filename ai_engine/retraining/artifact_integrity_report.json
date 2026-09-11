@@ -1,0 +1,70 @@
+{
+  "system": "SupplyPrescript",
+  "module": "AI Model Artifact Integrity Engine",
+  "generated_at": "2026-09-11T05:36:01.624267+00:00",
+  "current_model_version": "v1.0",
+  "overall_status": "HEALTHY",
+  "summary": {
+    "total_artifacts": 4,
+    "healthy_artifacts": 4,
+    "missing_artifacts": 0,
+    "corrupted_artifacts": 0
+  },
+  "registry_consistency": {
+    "healthy": true,
+    "checks": {
+      "current_version_defined": true,
+      "current_version_registered": true,
+      "all_artifacts_present": true,
+      "all_json_artifacts_valid": true
+    },
+    "current_version": "v1.0",
+    "missing_artifacts": [],
+    "corrupted_artifacts": []
+  },
+  "artifacts": [
+    {
+      "artifact": "classifier",
+      "file": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\models\\classifier.json",
+      "exists": true,
+      "size_bytes": 95414,
+      "sha256": "c24b2d93a1ed7bcd0b6fb32b4b6c3a2c663367e6c08995e371cf482c2f56c203",
+      "valid_json": true,
+      "status": "HEALTHY"
+    },
+    {
+      "artifact": "regressor",
+      "file": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\models\\regressor.json",
+      "exists": true,
+      "size_bytes": 380632,
+      "sha256": "23e5a55c085e69fa6eba0cca570e04fba0490a01b0a99c51982795875c8cd43e",
+      "valid_json": true,
+      "status": "HEALTHY"
+    },
+    {
+      "artifact": "classifier_metadata",
+      "file": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\models\\classifier_metadata.json",
+      "exists": true,
+      "size_bytes": 1172,
+      "sha256": "32cdf364f25a8b37bd31a836f8ec40c84cd7a317ca0962b5a2d91c3dcf1ea018",
+      "valid_json": true,
+      "status": "HEALTHY"
+    },
+    {
+      "artifact": "regressor_metadata",
+      "file": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\models\\regressor_metadata.json",
+      "exists": true,
+      "size_bytes": 868,
+      "sha256": "3511d90653588a45357454df5b1436d17a2cb156c3eb343b6569f936524e0dc9",
+      "valid_json": true,
+      "status": "HEALTHY"
+    }
+  ],
+  "integrity_policy": {
+    "checksum_algorithm": "SHA-256",
+    "detect_missing_files": true,
+    "detect_corrupted_json": true,
+    "validate_registry_consistency": true,
+    "modify_model_artifacts": false
+  }
+}

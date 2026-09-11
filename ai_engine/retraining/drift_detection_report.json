@@ -1,0 +1,142 @@
+{
+    "engine": "AI Model Data Drift Detection Engine",
+    "generated_at": "2026-09-11T05:38:49.011942+00:00",
+    "model_version": "1.0.0",
+    "dataset": {
+        "file": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\data\\processed\\ml_features.csv",
+        "total_records": 100,
+        "reference_records": 50,
+        "current_records": 50
+    },
+    "thresholds": {
+        "numeric_drift_threshold": 0.2,
+        "categorical_drift_threshold": 0.2,
+        "moderate_drift_feature_percentage": 0.2,
+        "high_drift_feature_percentage": 0.4
+    },
+    "summary": {
+        "total_features_checked": 11,
+        "features_with_valid_analysis": 11,
+        "stable_features": 10,
+        "drifted_features": 1,
+        "drift_percentage": 9.09,
+        "overall_status": "STABLE",
+        "retraining_signal": false
+    },
+    "feature_results": [
+        {
+            "feature": "distance_km",
+            "type": "numeric",
+            "status": "STABLE",
+            "drift_score": 0.0755,
+            "drift_detected": false,
+            "reference_mean": 1435.82,
+            "current_mean": 1544.2,
+            "threshold": 0.2
+        },
+        {
+            "feature": "lead_time_days",
+            "type": "numeric",
+            "status": "DRIFT_DETECTED",
+            "drift_score": 0.2238,
+            "drift_detected": true,
+            "reference_mean": 9.74,
+            "current_mean": 11.92,
+            "threshold": 0.2
+        },
+        {
+            "feature": "inventory_level",
+            "type": "numeric",
+            "status": "STABLE",
+            "drift_score": 0.1188,
+            "drift_detected": false,
+            "reference_mean": 47.14,
+            "current_mean": 52.74,
+            "threshold": 0.2
+        },
+        {
+            "feature": "supplier_reliability",
+            "type": "numeric",
+            "status": "STABLE",
+            "drift_score": 0.0273,
+            "drift_detected": false,
+            "reference_mean": 0.8132,
+            "current_mean": 0.8354,
+            "threshold": 0.2
+        },
+        {
+            "feature": "order_value",
+            "type": "numeric",
+            "status": "STABLE",
+            "drift_score": 0.0345,
+            "drift_detected": false,
+            "reference_mean": 127298.988,
+            "current_mean": 131685.6922,
+            "threshold": 0.2
+        },
+        {
+            "feature": "fuel_price_index",
+            "type": "numeric",
+            "status": "STABLE",
+            "drift_score": 0.0028,
+            "drift_detected": false,
+            "reference_mean": 117.4402,
+            "current_mean": 117.769,
+            "threshold": 0.2
+        },
+        {
+            "feature": "warehouse_load",
+            "type": "numeric",
+            "status": "STABLE",
+            "drift_score": 0.0577,
+            "drift_detected": false,
+            "reference_mean": 0.6444,
+            "current_mean": 0.6816,
+            "threshold": 0.2
+        },
+        {
+            "feature": "transport_mode",
+            "type": "categorical",
+            "status": "STABLE",
+            "drift_score": 0.14,
+            "drift_detected": false,
+            "threshold": 0.2,
+            "reference_categories": 4,
+            "current_categories": 4
+        },
+        {
+            "feature": "weather_severity",
+            "type": "categorical",
+            "status": "STABLE",
+            "drift_score": 0.16,
+            "drift_detected": false,
+            "threshold": 0.2,
+            "reference_categories": 4,
+            "current_categories": 4
+        },
+        {
+            "feature": "traffic_level",
+            "type": "categorical",
+            "status": "STABLE",
+            "drift_score": 0.12,
+            "drift_detected": false,
+            "threshold": 0.2,
+            "reference_categories": 3,
+            "current_categories": 3
+        },
+        {
+            "feature": "priority",
+            "type": "categorical",
+            "status": "STABLE",
+            "drift_score": 0.04,
+            "drift_detected": false,
+            "threshold": 0.2,
+            "reference_categories": 4,
+            "current_categories": 4
+        }
+    ],
+    "drifted_features": [
+        "lead_time_days"
+    ],
+    "recommendation": "NO_SIGNIFICANT_DATA_DRIFT: Continue normal model monitoring."
+}

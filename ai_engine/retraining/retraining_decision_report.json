@@ -1,0 +1,70 @@
+{
+    "engine": "AI Drift-Aware Retraining Decision Engine",
+    "generated_at": "2026-09-11T05:52:58.594315+00:00",
+    "model_version": "1.0.0",
+    "decision": {
+        "decision": "NO_RETRAINING_REQUIRED",
+        "confidence": "HIGH",
+        "reason": "Current drift, drift trend, and model health do not provide sufficient evidence for retraining.",
+        "high_risk_signal_count": 0,
+        "signals": [
+            {
+                "signal": "EXISTING_TRIGGER",
+                "severity": "INFO",
+                "result": "PASS",
+                "message": "Existing automated retraining trigger does not currently require retraining."
+            },
+            {
+                "signal": "DRIFT_LEVEL",
+                "severity": "LOW",
+                "result": "PASS",
+                "message": "Current feature drift remains below the moderate threshold."
+            },
+            {
+                "signal": "DRIFT_TREND",
+                "severity": "INFO",
+                "result": "INFO",
+                "message": "Not enough historical observations to establish a drift trend."
+            },
+            {
+                "signal": "MODEL_HEALTH",
+                "severity": "INFO",
+                "result": "INFO",
+                "message": "Model health status could not be fully evaluated."
+            }
+        ]
+    },
+    "evidence": {
+        "drift": {
+            "drift_percentage": 9.09,
+            "drifted_features": 1,
+            "overall_status": "STABLE",
+            "retraining_signal": false
+        },
+        "trend": {
+            "trend": "INSUFFICIENT_HISTORY",
+            "change_percentage_points": null,
+            "repeatedly_drifted_features": {}
+        },
+        "model_monitoring": {
+            "status": "UNKNOWN",
+            "available": true
+        },
+        "existing_retraining_trigger": {
+            "available": true,
+            "retraining_required": false,
+            "status": "UNKNOWN"
+        }
+    },
+    "decision_policy": {
+        "high_drift_percentage": 40.0,
+        "moderate_drift_percentage": 20.0,
+        "worsening_trend_requires_review": true,
+        "unhealthy_model_statuses": [
+            "CRITICAL",
+            "DEGRADED",
+            "UNHEALTHY"
+        ]
+    },
+    "operational_scope": "This engine recommends or reviews retraining. It does not train, replace, promote, or rollback model artifacts."
+}

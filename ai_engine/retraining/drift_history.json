@@ -1,0 +1,16 @@
+[
+    {
+        "timestamp": "2026-09-11T05:50:07.958770+00:00",
+        "model_version": "1.0.0",
+        "total_records": 100,
+        "features_checked": 11,
+        "stable_features": 10,
+        "drifted_features": 1,
+        "drift_percentage": 9.09,
+        "overall_status": "STABLE",
+        "retraining_signal": false,
+        "drifted_feature_names": [
+            "lead_time_days"
+        ]
+    }
+]

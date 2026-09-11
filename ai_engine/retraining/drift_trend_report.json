@@ -1,0 +1,34 @@
+{
+    "engine": "AI Model Drift History and Trend Engine",
+    "generated_at": "2026-09-11T05:50:07.958941+00:00",
+    "model_version": "1.0.0",
+    "latest_observation": {
+        "drift_percentage": 9.09,
+        "drifted_features": 1,
+        "stable_features": 10,
+        "overall_status": "STABLE",
+        "retraining_signal": false
+    },
+    "history": {
+        "observations": 1,
+        "maximum_retained_observations": 50
+    },
+    "trend_analysis": {
+        "trend": "INSUFFICIENT_HISTORY",
+        "previous_drift_percentage": null,
+        "current_drift_percentage": 9.09,
+        "change_percentage_points": null,
+        "interpretation": "A second drift observation is required to determine the trend."
+    },
+    "feature_history": {
+        "total_features_with_historical_drift": 1,
+        "repeatedly_drifted_features": {},
+        "most_frequent_drift_features": [
+            [
+                "lead_time_days",
+                1
+            ]
+        ]
+    },
+    "recommendation": "NORMAL_MONITORING: No significant persistent drift pattern detected."
+}

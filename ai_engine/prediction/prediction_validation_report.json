@@ -1,0 +1,943 @@
+{
+    "engine": "AI Prediction Response Validator",
+    "generated_at": "2026-09-12T11:35:10.899525",
+    "prediction_file": "D:\\SupplyPrescript-project-2-itsp\\ai_engine\\prediction\\ai_intelligence_results.json",
+    "validation": {
+        "validation_status": "VALID",
+        "validation_score": 100.0,
+        "total_shipments": 10,
+        "valid_shipments": 10,
+        "invalid_shipments": 0,
+        "total_checks": 160,
+        "passed_checks": 160,
+        "failed_checks": 0,
+        "shipment_results": [
+            {
+                "shipment_id": "SHP0000001",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'ON_TIME' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'LOW' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'LOW' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000002",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'HIGH' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'LOW' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'HIGH' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000003",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'LOW' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'HIGH' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000004",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000005",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000006",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000007",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000008",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000009",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'DELAYED' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'CRITICAL' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            },
+            {
+                "shipment_id": "SHP0000010",
+                "validation": {
+                    "validation_status": "VALID",
+                    "validation_score": 100.0,
+                    "total_checks": 16,
+                    "passed_checks": 16,
+                    "failed_checks": 0,
+                    "checks": [
+                        {
+                            "check": "SHIPMENT_ID",
+                            "status": "PASS",
+                            "message": "Shipment ID is present and valid."
+                        },
+                        {
+                            "check": "PREDICTION_OBJECT",
+                            "status": "PASS",
+                            "message": "Prediction object is present."
+                        },
+                        {
+                            "check": "DELAY_PROBABILITY",
+                            "status": "PASS",
+                            "message": "Delay probability is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "PREDICTION_STATUS",
+                            "status": "PASS",
+                            "message": "Prediction status 'ON_TIME' is valid."
+                        },
+                        {
+                            "check": "EXPECTED_DELAY_DAYS",
+                            "status": "PASS",
+                            "message": "Expected delay duration is non-negative."
+                        },
+                        {
+                            "check": "RISK_LEVEL",
+                            "status": "PASS",
+                            "message": "Risk level 'LOW' is valid."
+                        },
+                        {
+                            "check": "CONFIDENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Confidence object is present."
+                        },
+                        {
+                            "check": "CONFIDENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Confidence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "CONFIDENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Confidence level 'LOW' is valid."
+                        },
+                        {
+                            "check": "INTELLIGENCE_OBJECT",
+                            "status": "PASS",
+                            "message": "Intelligence object is present."
+                        },
+                        {
+                            "check": "INTELLIGENCE_SCORE",
+                            "status": "PASS",
+                            "message": "Intelligence score is within the valid range 0 to 1."
+                        },
+                        {
+                            "check": "INTELLIGENCE_LEVEL",
+                            "status": "PASS",
+                            "message": "Intelligence level 'MEDIUM' is valid."
+                        },
+                        {
+                            "check": "RISK_DRIVERS",
+                            "status": "PASS",
+                            "message": "Risk drivers are provided as a valid list."
+                        },
+                        {
+                            "check": "SHAP_EXPLANATION",
+                            "status": "PASS",
+                            "message": "SHAP explanation contains valid feature explanations."
+                        },
+                        {
+                            "check": "HISTORICAL_EVIDENCE",
+                            "status": "PASS",
+                            "message": "Historical evidence contains valid metrics."
+                        },
+                        {
+                            "check": "CROSS_FIELD_CONSISTENCY",
+                            "status": "PASS",
+                            "message": "Nested prediction and historical metrics are internally consistent."
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "operational_scope": {
+        "prediction_modified": false,
+        "model_modified": false,
+        "optimization_executed": false,
+        "validator_only": true
+    }
+}

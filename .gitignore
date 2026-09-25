@@ -11,6 +11,9 @@ env/
 ai_engine/data/raw/*.csv
 ai_engine/data/processed/*.csv
 
+# Generated AI prediction outputs
+ai_engine/prediction/*.json
+
 # Jupyter
 .ipynb_checkpoints/
 

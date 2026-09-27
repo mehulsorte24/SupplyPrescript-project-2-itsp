@@ -1,0 +1,71 @@
+{
+    "system": "SupplyPrescript",
+    "module": "AI Recommendation Outcome Analysis Engine",
+    "engine_version": "1.0",
+    "status": "COMPLETED",
+    "analyzed_at": "2026-09-27T22:20:26.302127",
+    "decision_reference": {
+        "decision_id": "DEC-20260926180203-841489",
+        "selected_action": "Expedite transportation",
+        "decision_status": "CAPTURED",
+        "decision_source": "MANAGER"
+    },
+    "recommendation_reference": {
+        "recommended_action": "Expedite transportation",
+        "recommendation_rank": 1,
+        "recommendation_score": null,
+        "recommendation_reasons": [
+            "High disruption exposure indicates that faster transportation may reduce the impact of shipment delays."
+        ]
+    },
+    "recommendation_alignment": {
+        "manager_selected_ai_recommendation": true,
+        "alignment_status": "ALIGNED"
+    },
+    "outcome_evidence": {
+        "shipment_id": "SHP0000001",
+        "predicted_status": "ON_TIME",
+        "actual_status": "DELAYED",
+        "classification_correct": false,
+        "predicted_delay_days": 0.58,
+        "actual_delay_days": 2.0,
+        "absolute_delay_error_days": 1.42,
+        "outcome_assessment": "PREDICTION_CLASSIFICATION_MISMATCH"
+    },
+    "recommendation_effectiveness": {
+        "outcome_evaluation_available": true,
+        "observed_outcome_signal": "NEGATIVE_PREDICTION_SIGNAL",
+        "recommendation_effectiveness_status": "EVIDENCE_AVAILABLE",
+        "causal_effect_established": false,
+        "causal_effect_reason": "The current dataset contains one observed outcome reference but does not contain a counterfactual or controlled comparison."
+    },
+    "closed_loop_learning": {
+        "manager_action_recorded": true,
+        "actual_outcome_recorded": true,
+        "prediction_evaluation_available": true,
+        "learning_signal_available": true,
+        "recommendation_evaluation_available": true,
+        "recommendation_weight_update_ready": false
+    },
+    "limitations": [
+        "The manager decision does not currently contain a shipment_id.",
+        "The selected outcome is therefore an outcome reference rather than a verified shipment-specific decision outcome.",
+        "The current data does not establish causal impact of the selected action.",
+        "Recommendation effectiveness should be evaluated across multiple decision-outcome records before changing recommendation weights."
+    ],
+    "operational_safety": {
+        "recommendation_executed": false,
+        "shipments_modified": false,
+        "supplier_modified": false,
+        "inventory_modified": false,
+        "optimization_executed": false,
+        "prediction_outputs_modified": false,
+        "risk_reports_modified": false,
+        "manager_decision_modified": false,
+        "models_modified": false,
+        "retraining_triggered": false,
+        "recommendation_weights_modified": false,
+        "database_modified": false,
+        "business_decision_executed": false
+    }
+}

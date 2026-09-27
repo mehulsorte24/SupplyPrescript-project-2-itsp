@@ -34,3 +34,5 @@ ai_engine/prediction/*.json
 # OS files
 .DS_Store
 Thumbs.db
+
+ai_engine/feedback/decision_outcomes.json

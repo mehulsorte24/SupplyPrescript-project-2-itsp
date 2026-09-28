@@ -14,6 +14,9 @@ ai_engine/data/processed/*.csv
 # Generated AI prediction outputs
 ai_engine/prediction/*.json
 
+# Generated feedback outputs
+ai_engine/feedback/*.json
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -34,5 +37,3 @@ ai_engine/prediction/*.json
 # OS files
 .DS_Store
 Thumbs.db
-
-ai_engine/feedback/decision_outcomes.json

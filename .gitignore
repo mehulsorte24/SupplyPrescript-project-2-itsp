@@ -37,3 +37,5 @@ ai_engine/feedback/*.json
 # OS files
 .DS_Store
 Thumbs.db
+# Local application database
+backend/supplyprescript.db
